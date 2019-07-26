@@ -1,0 +1,28 @@
+<mat-toolbar color="primary">Plant report</mat-toolbar>
+
+<div class="main-container">
+  <mat-card>Simple card</mat-card>
+
+  <br>
+
+  <div class="graphs-container">
+    <div class="left-container">
+      <mat-card>
+        <canvas baseChart
+                [datasets]="barChartData"
+                [labels]="chartB.labels"
+                [options]="chartB.options"
+                [legend]="chartB.legend"
+                [chartType]="chartB.type">
+        </canvas>
+      </mat-card>
+    </div>
+    <div class="right-container">
+      <mat-card>Simple card</mat-card>
+      <br>
+      <mat-card>Simple card</mat-card>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
